@@ -1,28 +1,28 @@
-\# AutoVizIQ Model Card
+AutoVizIQ Model Card
 
 
 
-\## 1. Project Information
+1. Project Information
 
 
 
-\* \*\*Project name:\*\* AutoVizIQ
+Project name: AutoVizIQ
 
-\* \*\*Version:\*\* 1.0
+Version: 1.0
 
-\* \*\*System type:\*\* Automated data analytics and dashboard generation
+System type: Automated data analytics and dashboard generation
 
-\* \*\*Project status:\*\* Prototype
+Project status: Prototype
 
-\* \*\*Interface framework:\*\* Reflex
+Interface framework: Reflex
 
-\* \*\*Programming language:\*\* Python
+Programming language: Python
 
-\* \*\*Last updated:\*\* October 2026
+Last updated: October 2026
 
 
 
-\## 2. Overview
+2. Overview
 
 
 
@@ -34,41 +34,41 @@ The current implementation primarily uses programmed rules and statistical opera
 
 
 
-\## 3. Intended Use
+3. Intended Use
 
 
 
-\### Intended users
+Intended users
 
 
 
-\* Students and educators
+Students and educators
 
-\* Business analysts
+Business analysts
 
-\* Researchers
+Researchers
 
-\* Users who want to explore data without extensive programming knowledge
-
-
-
-\### Intended applications
+Users who want to explore data without extensive programming knowledge
 
 
 
-\* Exploratory data analysis
-
-\* Data quality inspection
-
-\* Identification of missing values and duplicate records
-
-\* Visualization of numerical, categorical, and date-related data
-
-\* Generation of preliminary descriptive insights
+Intended applications
 
 
 
-\### Out-of-scope applications
+Exploratory data analysis
+
+Data quality inspection
+
+Identification of missing values and duplicate records
+
+Visualization of numerical, categorical, and date-related data
+
+Generation of preliminary descriptive insights
+
+
+
+Out-of-scope applications
 
 
 
@@ -76,7 +76,7 @@ AutoVizIQ should not be used as the sole basis for high-stakes healthcare, emplo
 
 
 
-\## 4. System Architecture
+4. System Architecture
 
 
 
@@ -84,15 +84,15 @@ The application uses the following components:
 
 
 
-\* \*\*Reflex:\*\* Web interface and interactive application state
+Reflex: Web interface and interactive application state
 
-\* \*\*Pandas:\*\* Data loading, transformation, cleaning, and analysis
+Pandas: Data loading, transformation, cleaning, and analysis
 
-\* \*\*NumPy:\*\* Numerical operations
+NumPy: Numerical operations
 
-\* \*\*Plotly:\*\* Interactive charts and visualizations
+Plotly: Interactive charts and visualizations
 
-\* \*\*Rule-based logic:\*\* Column detection, chart generation, and descriptive insight generation
+Rule-based logic: Column detection, chart generation, and descriptive insight generation
 
 
 
@@ -100,25 +100,25 @@ The general workflow is:
 
 
 
-1\. User uploads a CSV or Excel file.
+1. User uploads a CSV or Excel file.
 
-2\. The application reads and profiles the dataset.
+2. The application reads and profiles the dataset.
 
-3\. Basic cleaning operations are applied according to the implemented rules.
+3. Basic cleaning operations are applied according to the implemented rules.
 
-4\. Column types and available data patterns are analyzed.
+4. Column types and available data patterns are analyzed.
 
-5\. Visualizations and summary statistics are generated.
+5. Visualizations and summary statistics are generated.
 
-6\. The user explores the resulting dashboard.
-
-
-
-\## 5. Training Data
+6. The user explores the resulting dashboard.
 
 
 
-\*\*Dedicated model training datasets:\*\* None identified.
+5. Training Data
+
+
+
+Dedicated model training datasets:\*\* None identified.
 
 
 
@@ -130,35 +130,35 @@ If a machine-learning recommendation model is introduced in the future, its trai
 
 
 
-\## 6. Input and Output
+6. Input and Output
 
 
 
-\### Inputs
+Inputs
 
 
 
-\* CSV files
+CSV files
 
-\* Excel workbooks
+Excel workbooks
 
-\* Datasets containing numerical, categorical, and date-related columns
-
-
-
-\### Outputs
+Datasets containing numerical, categorical, and date-related columns
 
 
 
-\* Dataset summaries
+Outputs
 
-\* Data quality statistics
 
-\* Cleaning results
 
-\* Interactive charts
+Dataset summaries
 
-\* Automatically calculated descriptive insights
+Data quality statistics
+
+Cleaning results
+
+Interactive charts
+
+Automatically calculated descriptive insights
 
 
 
@@ -166,7 +166,7 @@ Output quality depends on the structure, accuracy, completeness, and suitability
 
 
 
-\## 7. Evaluation
+7. Evaluation
 
 
 
@@ -202,27 +202,27 @@ No numerical performance scores should be reported until the corresponding tests
 
 
 
-\## 8. Limitations
+8. Limitations
 
 
 
-\* Ambiguous dates and mixed data types may be incorrectly classified.
+Ambiguous dates and mixed data types may be incorrectly classified.
 
-\* Cleaning rules may remove useful information or alter the dataset.
+Cleaning rules may remove useful information or alter the dataset.
 
-\* Generated charts may not always be the most suitable for the analytical task.
+Generated charts may not always be the most suitable for the analytical task.
 
-\* Descriptive patterns and correlations do not establish causation.
+Descriptive patterns and correlations do not establish causation.
 
-\* Automatically generated insights may lack business context.
+Automatically generated insights may lack business context.
 
-\* Large datasets may increase processing time and memory requirements.
+Large datasets may increase processing time and memory requirements.
 
-\* The current system has not been validated across all possible dataset formats and domains.
+The current system has not been validated across all possible dataset formats and domains.
 
 
 
-\## 9. Fairness, Privacy, and Responsible Use
+9. Fairness, Privacy, and Responsible Use
 
 
 
@@ -238,7 +238,7 @@ The system should not be described as bias-free, privacy-certified, or suitable 
 
 
 
-\## 10. Maintenance and Future Improvements
+10. Maintenance and Future Improvements
 
 
 
@@ -246,21 +246,21 @@ Planned or potential improvements include:
 
 
 
-\* Testing against diverse public datasets
+Testing against diverse public datasets
 
-\* Improving data type detection and validation
+Improving data type detection and validation
 
-\* Adding transparent explanations for chart recommendations
+Adding transparent explanations for chart recommendations
 
-\* Measuring cleaning accuracy and processing performance
+Measuring cleaning accuracy and processing performance
 
-\* Improving uploaded-file security and lifecycle management
+Improving uploaded-file security and lifecycle management
 
-\* Exploring a separately evaluated machine-learning dashboard recommendation model
+Exploring a separately evaluated machine-learning dashboard recommendation model
 
 
 
-\## 11. Project Repository
+11. Project Repository
 
 
 
@@ -272,9 +272,5 @@ For implementation details, installation instructions, and updates, refer to the
 
 
 
-\---
-
-
-
-\*\*Documentation note:\*\* This card describes the current rule-based AutoVizIQ prototype. Features and evaluation results should be updated as implementation and testing progress.
+Documentation note:\*\* This card describes the current rule-based AutoVizIQ prototype. Features and evaluation results should be updated as implementation and testing progress.
 
