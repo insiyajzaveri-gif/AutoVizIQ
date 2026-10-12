@@ -1,36 +1,43 @@
-# AutoVizIQ
+# AutoVizIQ Advanced
 
-**AutoVizIQ** is an automated data visualization and exploratory data analysis (EDA) framework designed to streamline data processing, generate statistical summaries, and produce dynamic, high-impact visual insights from raw datasets.
+A single-file Streamlit analytics dashboard with automated profiling, data-quality checks, distributions, relationship analysis, time-series summaries, a non-destructive cleaning workbench, exports, and optional scikit-learn analytics.
 
----
+## Run locally (Mac)
 
-## Key Features
+```bash
+python3 -m venv .venv
+source .venv/bin/activate
+pip install -r requirements.txt
+streamlit run app.py
+```
 
-- **Automated Exploratory Data Analysis (EDA):** Instant computation of summary statistics, missing value ratios, correlation matrices, and distribution metrics.
-- **Intelligent Chart Selection:** Algorithmic recommendation and rendering of appropriate visualization types based on variable types (categorical, numerical, time-series).
-- **Interactive Dashboards:** Dynamic UI allowing users to filter, inspect, and analyze data on demand.
-- **Export & Reporting:** Clean, publication-ready output formats for effortless integration into reports and presentations.
+## Supported files
+- CSV / TXT
+- Excel (`.xlsx`, `.xls`)
+- JSON
+- Parquet
 
----
+## Features
+- Upload a dataset or use the synthetic retail demo dataset
+- Conservative date inference and optional numeric-text conversion
+- Data dictionary and column-level quality profile
+- Missingness and duplicate checks
+- Numeric/categorical distributions and outlier flags
+- Pearson, Spearman, or Kendall correlation heatmap
+- Scatter plots, group comparisons, and pivot-table builder
+- Time-series aggregation by day, week, month, quarter, or year
+- Optional Isolation Forest anomaly detection
+- Optional K-means clustering
+- Optional Random Forest feature-importance analysis
+- Cleaning preview that does not overwrite the uploaded source
+- CSV, JSON, TXT, and standalone HTML report exports
 
-## Architecture & Tech Stack
+## Important notes
+- The quality score is a transparent heuristic, not a standard certification.
+- Outliers are not necessarily errors.
+- Correlation and feature importance do not prove causality.
+- The model features are exploratory and should be interpreted using domain knowledge.
+- Large charts may sample rows for responsiveness, while exports preserve the prepared dataset.
 
-- **Core Engine:** Python 3.9+
-- **Data Manipulation:** `pandas`, `numpy`
-- **Visualization:** `matplotlib`, `seaborn`, `plotly`
-- **Web Interface:** `streamlit`
-
----
-
-## Installation
-
-### Prerequisites
-
-Ensure you have **Python 3.9+** and `git` installed on your local environment.
-
-### Setup
-
-1. **Clone the repository:**
-   ```bash
-   git clone [https://github.com/shreyaakhade1010-coder/AutoVizIQ.git](https://github.com/shreyaakhade1010-coder/AutoVizIQ.git)
-   cd AutoVizIQ
+## Project integration warning
+This implementation uses Streamlit. Keep a backup of the existing AutoVizIQ project before replacing files. If your existing repository uses Reflex or another framework, update the launch configuration and dependencies rather than mixing the old and new framework code.
